@@ -380,6 +380,8 @@ body {
     max-width: 600px;
     color: var(--text-secondary);
     font-size: 1rem;
+    margin-bottom: 60px;  /* Add this line */
+    padding-bottom: 20px; /* Add this line */
 }
 
 /* === MESSAGES === */
