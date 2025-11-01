@@ -315,9 +315,8 @@ body {
     overflow-y: auto;
     overflow-x: hidden;
     padding: var(--spacing-xl);
-    padding-bottom: var(--spacing-xl);
+    padding-bottom: calc(var(--spacing-xl) + 40px); /* Increased bottom padding */
     scroll-behavior: smooth;
-    /* Fixed height calculation: total height minus input section */
     height: calc(100vh - var(--nav-height) - var(--input-section-height));
 }
 
