@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Samarth - Agricultural Intelligence Platform</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <nav class="top-nav">
+        <div class="nav-content">
+            <div class="logo-section">
+                <div class="logo-icon">🌾</div>
+                <div class="logo-text">
+                    <h1>Project Samarth</h1>
+                    <p class="tagline">Agricultural Intelligence Platform</p>
+                </div>
+            </div>
+            <div class="nav-actions">
+                <div class="system-status" id="systemStatus">
+                    <span class="status-dot"></span>
+                    <span class="status-text">System Ready</span>
+                </div>
+                <button id="newChatBtn" class="btn-icon" title="New Conversation">
+                    <span>🔄</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Left Sidebar - Examples -->
+        <aside class="sidebar left-sidebar" id="leftSidebar">
+            <div class="sidebar-header">
+                <h3>💡 Example Questions</h3>
+                <button class="collapse-btn" id="leftCollapseBtn" title="Collapse">◀</button>
+            </div>
+            <div class="sidebar-content">
+                <div class="examples-grid">
+                    <button class="example-card">
+                        <div class="example-icon">🌧️</div>
+                        <div class="example-text">Compare the average annual rainfall in Maharashtra and Gujarat for the last 10 years and list the top 3 crops by production in both states.</div>
+                    </button>
+                    <button class="example-card">
+                        <div class="example-icon">🌾</div>
+                        <div class="example-text">Compare rainfall in Punjab and Haryana for the last 5 years and list the top 5 cash crops in each state.</div>
+                    </button>
+                    <button class="example-card">
+                        <div class="example-icon">📊</div>
+                        <div class="example-text">Find the district with highest Wheat production in Uttar Pradesh and the lowest in Bihar in the latest available year.</div>
+                    </button>
+                    <button class="example-card">
+                        <div class="example-icon">📈</div>
+                        <div class="example-text">Analyze the Paddy production trend in the Indo-Gangetic Plain over the last 10 years and relate it to rainfall variation.</div>
+                    </button>
+                    <button class="example-card">
+                        <div class="example-icon">🌧️</div>
+                        <div class="example-text">Identify states with >20% monsoon rainfall deficit in 2019 and list the top 3 crops most affected.</div>
+                    </button>
+
+                </div>
+            </div>
+        </aside>
+
+        <!-- Center Content - Chat Area -->
+        <main class="chat-area">
+            <div class="chat-container">
+                <div id="chatMessages" class="messages-container">
+                    <div class="welcome-screen">
+                        <div class="welcome-icon">👋</div>
+                        <h2>Welcome to Project Samarth</h2>
+                        <p class="welcome-subtitle">Your intelligent assistant for agricultural and climate data insights</p>
+                        <div class="feature-pills">
+                            <span class="pill">🔍 Query Enhancement</span>
+                            <span class="pill">🎯 Multi-Stage Retrieval</span>
+                            <span class="pill">⚡ Intelligent Reranking</span>
+                            <span class="pill">📦 Context Compression</span>
+                        </div>
+                        <p class="welcome-prompt">Ask me anything about crop production, rainfall patterns, climate trends, and agricultural insights across India.</p>
+                    </div>
+                </div>
+
+                <!-- Input Area - Now Fixed -->
+                <div class="input-section">
+                    <div class="input-wrapper">
+                        <textarea 
+                            id="questionInput" 
+                            placeholder="Ask about agricultural production, climate patterns, crop trends..."
+                            rows="1"
+                        ></textarea>
+                        <button id="sendBtn" class="send-button">
+                            <span class="send-icon">➤</span>
+                        </button>
+                    </div>
+                    <div class="input-footer">
+                        <span class="hint">💡 Pro tip: Ask specific questions for better insights</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Right Sidebar - Info Panel -->
+        <aside class="sidebar right-sidebar" id="rightSidebar">
+            <div class="sidebar-header">
+                <h3>📊 Insights</h3>
+                <button class="collapse-btn" id="rightCollapseBtn" title="Collapse">▶</button>
+            </div>
+            <div class="sidebar-content">
+                <!-- Pipeline Status -->
+                <div class="info-section">
+                    <div class="info-section-header">
+                        <span class="info-icon">⚙️</span>
+                        <h4>Pipeline Status</h4>
+                    </div>
+                    <div id="pipelineInfo" class="info-content">
+                        <div class="placeholder-state">
+                            <div class="placeholder-icon">⏳</div>
+                            <p>Processing information will appear here</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Sources -->
+                <div class="info-section">
+                    <div class="info-section-header">
+                        <span class="info-icon">📚</span>
+                        <h4>Data Sources</h4>
+                    </div>
+                    <div id="sourcesContainer" class="info-content">
+                        <div class="placeholder-state">
+                            <div class="placeholder-icon">📄</div>
+                            <p>Sources will appear after your query</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
