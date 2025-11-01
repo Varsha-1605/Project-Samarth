@@ -13,7 +13,7 @@ from rag_system.rag_pipeline import AdvancedRAGPipeline, SimpleRAGPipeline
 
 load_dotenv()
 
-app = Flask(__name__, static_folder='static', static_url_path='')
+app = Flask(__name__, static_folder='static', static_url_path='/static')
 CORS(app)
 
 # Get port from environment variable - Hugging Face uses 7860
