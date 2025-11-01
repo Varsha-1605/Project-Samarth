@@ -1,0 +1,36 @@
+# Core Dependencies
+flask
+flask-cors
+python-dotenv
+
+# Database
+sqlalchemy
+
+# OpenAI & LangChain
+openai
+langchain
+langchain-openai
+langchain-community
+langchain-core
+
+# Text Processing
+langchain-text-splitters
+
+# Vector Store
+faiss-cpu
+
+# Advanced RAG Components
+sentence-transformers  # For cross-encoder reranking
+rank-bm25  # For BM25 sparse retrieval
+scikit-learn  # For TF-IDF and similarity metrics
+
+# Data Processing
+requests
+pandas
+numpy
+
+# Optional (if needed)
+tiktoken  # For token counting
+
+# deployment:
+Werkzeug
