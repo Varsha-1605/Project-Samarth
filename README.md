@@ -12,6 +12,9 @@ app_port: 7860
 # 🌾 Project Samarth - Agricultural Intelligence Platform
 
 An advanced RAG (Retrieval-Augmented Generation) system for intelligent Q&A on Indian agricultural and climate data from data.gov.in.
+---
+<img width="1918" height="906" alt="Image" src="https://github.com/user-attachments/assets/dcfccb8d-0753-4dbe-8bc9-ce72a09bdaa0" />
+
 
 ## 🚀 Features
 
@@ -192,5 +195,6 @@ For issues or questions:
 1. **Add your OpenAI API key** in Settings → Repository secrets
 2. **Wait for initialization** (2-3 minutes on first query)
 3. **Start asking questions** about Indian agriculture and climate!
+
 
 Enjoy exploring agricultural and climate insights! 🌾☔
