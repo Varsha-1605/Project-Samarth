@@ -26,7 +26,7 @@ app_port: 7860
 
 ---
 
-<img width="1918" height="906" alt="Image" src="https://github.com/user-attachments/assets/dcfccb8d-0753-4dbe-8bc9-ce72a09bdaa0" />
+<img width="1917" height="909" alt="Image" src="https://github.com/user-attachments/assets/9e0bcc3a-1a5f-4a26-90f8-91240eb37143" />
 
 ---
 
@@ -1408,3 +1408,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **Try it now**: [https://vara1605454-project-samarth.hf.space/](https://vara1605454-project-samarth.hf.space/)
 
 </div>
+
